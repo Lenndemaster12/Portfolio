@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voeg Agendapunten Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+  <script src="add.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+
+    <figure class="Logo">
+      <a href="index.html"><img src="IMG/Logo (1).jpg" alt="Logo van de site"></a>
+    </figure>
+
+
+
+    <nav class="Navigatie">
+      <ul>
+        <li><a href="Agenda.html" class="Agenda">Agenda</a></li>
+        <li class="hier"><a href="add.html">Add</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+
+
+  <div class="wrapper">
+    <h1 class="agendapunttoevoegen">voeg hier uw agendapunt toe</h1>
+
+    <form class="add">
+      <label for="Datum">Datum</label>
+      <input type="date" id="Datum">
+
+      <label for="Artiest">Artiest</label>
+      <input type="text" id="Artiest">
+
+      <input type="submit" value="Voeg agendapunt toe">
+    </form>
+    <div id="feedback"></div>
+  </div>
+</body>
+
+</html>
