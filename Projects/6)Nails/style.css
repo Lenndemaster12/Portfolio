@@ -1,0 +1,107 @@
+/* Algemene stijlen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffccd5;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background-color: #ffe6e6;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #ff6584;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6584;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff4757;
+}
+
+.menu h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #ffccd5;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries voor Responsiviteit */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

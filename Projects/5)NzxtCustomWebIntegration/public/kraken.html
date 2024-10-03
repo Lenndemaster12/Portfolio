@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NZXT Kraken Display</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Welkomstscherm -->
+
+    <div id="welcomeScreen" class="welcome-screen">
+      <h2>Welcome Lenn</h2>
+      <div class="spinner"></div>
+    </div>
+
+    <h1>NZXT</h1>
+
+    <div class="overlay">
+      <div class="monitoring-container">
+        <!-- CPU weergave -->
+        <div id="cpuData" class="monitoring-data">
+          <div class="Graden">
+            <p id="cpuTemp" class="TEMP">N/A</p>
+            <p class="gradenachtertemp">°C</p>
+          </div>
+          <p class="name">CPU</p>
+        </div>
+
+        <!-- GPU weergave -->
+        <div id="gpuData" class="monitoring-data">
+          <div class="Graden">
+            <p id="gpuTemp" class="TEMP">N/A</p>
+            <p class="gradenachtertemp">°C</p>
+          </div>
+          <p class="name">GPU</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stroomverbruik van CPU + GPU -->
+    <div id="powerData" class="monitoring-data">
+      <div class="Graden">
+        <p id="totalPowerUsage" class="TEMP">N/A</p>
+        <p class="gradenachtertemp">W</p>
+      </div>
+      <p class="name">Power</p>
+    </div>
+  </body>
+</html>
