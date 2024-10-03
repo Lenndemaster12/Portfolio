@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <p>Home</p>
             </li>
           </a>
-          <a href="./projecten.html">
+          <a href="projecten.html">
             <li>
               <i class="fas fa-project-diagram"></i>
               <p>Projecten</p>
