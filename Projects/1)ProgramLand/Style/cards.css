@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.CardsBackground {
+    background-image: url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+/* Algemene stijlen voor de kaart */
+.card {
+    width: 300px;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stijlen voor de kaartafbeelding */
+.card-image {
+    width: 280px;
+    height: 200px;
+    display: block;
+}
+
+/* Stijlen voor de kaartinhoud */
+.card-content {
+    padding: 20px;
+}
+
+/* Stijlen voor de kaarttekst */
+.card-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    text-align: center;
+    margin: 100px;
+    border: black 1px solid;
+    padding-bottom: 50px;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Stijlen voor de kaartlink */
+.card-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-download {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.card-link:hover {
+    background-color: #0056b3;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+.TitleGSM {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+}
+
+@media (max-width: 768px) {
+.card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+}

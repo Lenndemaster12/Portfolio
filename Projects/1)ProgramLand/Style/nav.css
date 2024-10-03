@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clock {
+    font-size: 2rem;
+    padding: 2px;
+    color: white;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-bottom: 50px;
+}
+
+.TitleGSM {
+  display: none;
+}
+
+.navGSM {
+    display: none;
+}
+
+.navPC {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.navPC .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navPC ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navPC a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navPC.active .container {
+    padding: 10px 0;
+}
+
+.navPC a.current {
+    color: #c0392b;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navPC a:hover {
+    color: darkred;
+}
+
+@media (max-width: 1024px) {
+.navPC {
+    display: none;
+}
+    
+.navPC {
+    display: none;
+}
+.navGSM {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.navGSM ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+
+.navGSM li {
+    color: #777;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.navGSM ul a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navGSM ul a.current li i,
+.navGSM ul a.current li p {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.navGSM ul a li p {
+    font-size: 12px;
+    margin: 2px 0;
+    color: white;
+}
+
+.navGSM ul a li i {
+    color: white;
+}
+
+}
